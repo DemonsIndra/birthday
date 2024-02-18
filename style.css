@@ -1,0 +1,157 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hero h1 {
+  font-size: 68px;
+  font-weight: bold;
+}
+
+.hero span {
+  color: salmon;
+}
+
+.hero p {
+  font-size: 22px;
+  color: #959595;
+}
+/* 
+.input-search input {
+  width: 800px;
+  padding: 15px 30px;
+  border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.input-search i {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+} */
+
+.card {
+  position: relative;
+  max-width: 350px;
+  height: 250px;
+  background-color: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: none;
+  transition: 0.3s ease-in-out;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+}
+.card:hover {
+  height: 400px;
+}
+
+.card .image {
+  position: relative;
+  width: 300px;
+  height: 260px;
+  top: -40%;
+  left: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card .image img {
+  max-width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card .image h3 {
+  font-size: 16px;
+  color: #d5d5d5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.card .image span {
+  color: salmon;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.card .content {
+  position: relative;
+  top: -140px;
+  padding: 10px 15px;
+  color: #111;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover .content {
+  margin-top: 30px;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.card-title {
+  font-size: 28px;
+}
+
+.title-member {
+  color: #d5d5d5;
+  font-size: 14px;
+}
+
+.social-media {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+}
+
+.social-media i {
+  font-size: 30px;
+  color: salmon;
+}
+.social-media i:hover {
+  opacity: 0.8;
+}
+
+.member .row {
+  row-gap: 100px;
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+    font-weight: bold;
+  }
+
+  .hero p {
+    font-size: 14px;
+    color: #959595;
+  }
+}
